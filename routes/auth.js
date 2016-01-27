@@ -19,7 +19,7 @@ router.get('/signin', function(req, res, next) {
 });
 
 router.get('/signout', function(req, res, next) {
-    res.clearCookie("user");
+      res.clearCookie("user");
     res.render("auth/signin", {button_text: "sign in", notice: "you have been signed out"});
 });
 
@@ -31,7 +31,7 @@ router.get('/no_auth', function(req, res, next) {
     res.render("auth/yousuck");
 });
 
- 
+
 
 
 
